@@ -1,7 +1,67 @@
 .sidemenu-container {
   display: flex;
   flex-direction: column;
-  gap: 32px;
   justify-content: center;
-  margin-right: 32px;
+  padding-right: 32px;
+  transition: 0.5s;
+
+  .mobile-button {
+    display: none;
+  }
+
+  .sidemenu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .active {
+    background-color: #ffb400;
+  }
+}
+@media screen and (max-width: 991px) {
+  .sidemenu-container {
+    justify-content: flex-start;
+    padding: 16px;
+    width: 100px;
+    // position: fixed;
+    position: relative;
+
+    &.open {
+      background-color: #2b2a2a;
+      width: 100vw;
+      height: 100%;
+      position: fixed;
+      z-index: 1;
+
+      .sidemenu-buttons {
+        display: flex;
+        gap: 24px;
+      }
+    }
+
+    &.close {
+      //   background-color: red;
+      .sidemenu-buttons {
+        display: none;
+      }
+    }
+    .mobile-button {
+      display: flex;
+      justify-content: flex-end;
+
+      button {
+        border: none;
+      }
+    }
+
+    .sidemenu-buttons {
+      display: none;
+    }
+
+    .active {
+      color: #ffb400;
+      background: transparent;
+    }
+  }
 }
