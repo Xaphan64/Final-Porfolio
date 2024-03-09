@@ -6,8 +6,24 @@
 
   display: flex;
   justify-content: space-between;
+  position: relative;
 
-  // @media screen and (max-width: 991px) {
-  //   flex-direction: row-reverse;
-  // }
+  .mobile-button {
+    display: none;
+  }
+
+  @media screen and (max-width: 991px) {
+    .mobile-button {
+      display: flex;
+      right: 10px;
+      top: 10px;
+      position: absolute;
+      z-index: 11;
+
+      button {
+        border: none;
+        padding: 8px;
+      }
+    }
+  }
 }
