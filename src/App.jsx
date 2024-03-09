@@ -50,7 +50,7 @@ const App = () => {
         )}
       </div>
 
-      {page === "home" && <Homepage />}
+      {page === "home" && <Homepage handleSwitchPage={handleSwitchPage} />}
       {page === "about" && <h1>about page</h1>}
       {page === "portfolio" && <h1>portfolio page</h1>}
       {page === "contact" && <h1>contact page</h1>}

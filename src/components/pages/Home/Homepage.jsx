@@ -1,5 +1,6 @@
 // ASSETS
 import profilePic from "./../../assets/placeholder.webp";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 // STYLES
 import "./Homepage.scss";
@@ -11,7 +12,7 @@ import "./Homepage.scss";
 // COMPONENTS
 
 // CONFIGURATION
-const Homepage = () => {
+const Homepage = ({ handleSwitchPage }) => {
   // PROPERTIES
 
   // API REQUESTS
@@ -31,15 +32,21 @@ const Homepage = () => {
 
       <div className="homepage-text-container">
         <div className="homepage-title">
-          <h1>I'M ALEXANDRU-DANIEL.</h1>
+          <h1 className="colored-title">I'M ALEXANDRU-DANIEL.</h1>
           <h1>WEB DEVELOPER</h1>
         </div>
+
         <span className="homepage-text">
           I'm an Online Requirements/Networking Specialist with a passion for Front-End development. Dedicated to
-          mastering React JS, JavaScript, CSS, and HTML, with a steadfast dream to become a full-time React developer.
+          mastering React JS, JavaScript, SCSS, and HTML, with a dream to become a full-time React developer.
         </span>
 
-        <button>MORE ABOUT ME</button>
+        <div className="homepage-button" onClick={() => handleSwitchPage("about")}>
+          <button>
+            <span>MORE ABOUT ME</span>
+            <ArrowForwardIcon />
+          </button>
+        </div>
       </div>
     </div>
   );

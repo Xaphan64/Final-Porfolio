@@ -21,6 +21,7 @@
     justify-content: flex-start;
     padding: 32px 0;
     transition: width 0.3s;
+    overflow-y: scroll;
 
     &.open {
       background-color: #2b2a2a;
@@ -50,6 +51,17 @@
     .active {
       color: #ffb400;
       background: transparent;
+    }
+  }
+}
+
+@media (orientation: landscape) and (max-width: 991px) {
+  .sidemenu-container {
+    padding-top: 16px;
+
+    .sidemenu-buttons {
+      gap: 16px;
+      overflow-y: hidden;
     }
   }
 }
