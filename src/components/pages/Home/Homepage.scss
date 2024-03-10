@@ -5,7 +5,7 @@
   justify-content: space-between;
   padding: 0 40px;
   z-index: 0;
-  background: linear-gradient(75deg, #ffb400 25%, transparent 25.3%);
+  background: linear-gradient(76deg, #ffb400 25.1%, transparent 25.2%);
 
   .homepage-image {
     img {
@@ -15,6 +15,7 @@
       height: 90vh;
       object-fit: cover;
       object-position: center;
+      box-shadow: 0px 3px 32px #111111;
     }
   }
 

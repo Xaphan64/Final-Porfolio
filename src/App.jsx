@@ -13,6 +13,7 @@ import { useEffect, useState } from "react";
 // COMPONENTS
 import Sidemenu from "./components/sidemenu/Sidemenu";
 import Homepage from "./components/pages/Home/Homepage";
+import About from "./components/pages/About/About";
 
 // CONFIGURATION
 const App = () => {
@@ -51,7 +52,7 @@ const App = () => {
       </div>
 
       {page === "home" && <Homepage handleSwitchPage={handleSwitchPage} />}
-      {page === "about" && <h1>about page</h1>}
+      {page === "about" && <About />}
       {page === "portfolio" && <h1>portfolio page</h1>}
       {page === "contact" && <h1>contact page</h1>}
 
