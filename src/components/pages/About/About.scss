@@ -1,22 +1,25 @@
 .about-container {
-  padding-top: 40px;
+  padding: 40px 0;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10%;
-  //   justify-content: space-around; // change this later?
   overflow-y: auto;
 
-  border: 1px solid red;
+  scrollbar-width: none;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 
   .about-title {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 
     h1 {
-      position: fixed;
       font-size: 120px;
       font-weight: 900;
       z-index: 1;
@@ -28,6 +31,7 @@
       display: flex;
       gap: 8px;
       z-index: 2;
+      position: absolute;
 
       h2 {
         font-size: 60px;
@@ -47,20 +51,20 @@
     gap: 40px;
     width: 40%;
 
-    // border: 1px solid red;
-
     h2 {
       font-size: 32px;
+    }
+
+    .about-image {
+      display: none;
     }
 
     .about-details {
       display: flex;
       flex-direction: row;
-      //   gap: 48px;
       justify-content: space-evenly;
-      width: 100%;
 
-      //   gap: 16px;
+      width: 100%;
 
       .about-details-row {
         display: flex;
@@ -111,7 +115,7 @@
     .about-experience {
       display: flex;
       flex-direction: row;
-      justify-content: space-around; //change later ?
+      justify-content: space-evenly;
 
       .about-experience-row {
         display: flex;
@@ -142,6 +146,8 @@
               border-bottom: none;
               border-right: none;
               height: 100%;
+              width: 0;
+              opacity: 1;
             }
           }
 
@@ -167,9 +173,211 @@
               display: flex;
               gap: 8px;
               align-items: center;
+              width: 500px;
 
               h4 {
                 color: #a9a9a9;
+              }
+            }
+
+            .item-description {
+              width: 500px;
+              height: 90px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .about-skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    h2 {
+      font-size: 32px;
+      text-align: center;
+    }
+
+    .about-skills {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+
+      .about-skills-item {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+          font-size: 24px;
+        }
+
+        span {
+          font-size: 16px;
+          color: #a9a9a9;
+        }
+      }
+    }
+  }
+
+  hr {
+    border-top: 1px solid gray;
+    width: 25%;
+    border-left: none;
+    border-bottom: none;
+    border-right: none;
+    opacity: 0.3;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .about-container {
+    .about-info {
+      width: 60%;
+
+      .about-details {
+        justify-content: space-between;
+      }
+    }
+    .about-skills-container {
+      padding: 0 40px;
+    }
+    .about-experience-container {
+      .about-experience {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .about-container {
+    .about-info {
+      width: 100%;
+
+      .about-details {
+        justify-content: space-evenly;
+      }
+    }
+
+    .about-button {
+      button {
+        border-radius: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about-container {
+    margin-top: 48px;
+    padding: 0;
+    overflow-y: auto;
+    gap: 40px;
+
+    .about-title {
+      h1 {
+        display: none;
+      }
+
+      .about-front-title {
+        position: fixed;
+        background-color: #2b2a2a;
+        width: 100%;
+        top: 0;
+        padding: 4px 16px;
+
+        h2 {
+          font-size: 32px;
+        }
+      }
+    }
+
+    .about-info {
+      width: 100%;
+
+      h2 {
+        font-size: 22px;
+        text-align: center;
+      }
+
+      .about-image {
+        display: flex;
+        img {
+          width: 200px;
+          height: 200px;
+          border-radius: 100px;
+          object-fit: cover;
+          object-position: center;
+          border: 3px solid #2b2a2a;
+        }
+      }
+
+      .about-details {
+        gap: min(8px);
+
+        @media screen and (max-width: 330px) {
+          flex-direction: column;
+          text-align: center;
+        }
+        .about-details-row {
+          .about-details-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            font-size: 16px;
+
+            @media screen and (max-width: 400px) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .about-skills-container {
+      h2 {
+        font-size: 22px;
+      }
+
+      .about-skills {
+        .about-skills-item {
+          h3 {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .about-experience-container {
+      padding: 0 8px;
+
+      h2 {
+        font-size: 22px;
+      }
+
+      .about-experience {
+        gap: 24px;
+        .about-experience-row {
+          gap: 24px;
+
+          .about-experience-item {
+            padding-bottom: 20px;
+
+            .item-container {
+              gap: 8px;
+
+              .item-position {
+                flex-direction: column;
+                align-items: flex-start;
+                width: auto;
+              }
+
+              .item-description {
+                width: auto;
+                height: auto;
               }
             }
           }
