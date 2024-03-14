@@ -14,6 +14,7 @@ import { useEffect, useState } from "react";
 import Sidemenu from "./components/sidemenu/Sidemenu";
 import Homepage from "./components/pages/Home/Homepage";
 import About from "./components/pages/About/About";
+import Portfolio from "./components/pages/Portfolio/Portfolio";
 
 // CONFIGURATION
 const App = () => {
@@ -53,7 +54,7 @@ const App = () => {
 
       {page === "home" && <Homepage handleSwitchPage={handleSwitchPage} />}
       {page === "about" && <About />}
-      {page === "portfolio" && <h1>portfolio page</h1>}
+      {page === "portfolio" && <Portfolio />}
       {page === "contact" && <h1>contact page</h1>}
 
       <Sidemenu showSidebar={showSidebar} page={page} handleSwitchPage={handleSwitchPage} />
