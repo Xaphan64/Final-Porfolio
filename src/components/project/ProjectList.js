@@ -1,36 +1,35 @@
-import blogApp from "../assets/blog_app_preview.png";
-import pmApp from "../assets/pm_app_preview.png";
-import ecommerceApp from "../assets/ecommerce_app_preview.png";
-
 import blog from "../assets/blog_preview.jpg";
 import pm from "../assets/pm_preview.avif";
-import ecommerce from "../assets/ecommerce_preview.jpg";
+import ecommerce from "../assets/ecommerce_preview.webp";
 
 export const ProjectList = [
   {
+    id: 1,
     name: "The Blogs",
+    type: "Blog Project",
     image: blog,
-    imageApp: blogApp,
-    skills: "HTML, SCSS, JavaScript, Fetch API",
+    skills: "HTML, SASS, JavaScript, Fetch API",
     github: "https://github.com/Xaphan64/The-Blogs",
-    redirect: "",
+    redirect: "N/A",
   },
 
   {
-    name: "Project Management App",
+    id: 2,
+    name: "TaskHub",
+    type: "Project Management App",
     image: pm,
-    imageApp: pmApp,
-    skills: "HTML, SCSS, JavaScript, Local Storage",
+    skills: "HTML, SASS, JavaScript, Local Storage",
     github: "https://github.com/Xaphan64/Project-Management",
     redirect: "https://project-management-lac.vercel.app/",
   },
 
   {
-    name: "aStore (ecommerce app)",
+    id: 3,
+    name: "aStore",
+    type: "Ecommerce App",
     image: ecommerce,
-    imageApp: ecommerceApp,
-    skills: "HTML, SCSS, JavaScript, Local Storage, Axios",
+    skills: "HTML, SASS, JavaScript, Local Storage, Axios",
     github: "https://github.com/Xaphan64/aStore",
-    redirect: "",
+    redirect: "N/A",
   },
 ];

@@ -9,7 +9,7 @@
 // COMPONENTS
 
 // CONFIGURATION
-const ProjectCard = ({ image, name }) => {
+const ProjectCard = ({ id, image, name, handleProjectPress }) => {
   // PROPERTIES
 
   // API REQUESTS
@@ -22,9 +22,10 @@ const ProjectCard = ({ image, name }) => {
 
   // EVENT HANDLERS
   return (
-    <div className="project-card-container">
-      <div style={{ backgroundImage: `url(${image})` }} className="project-image" />
-      <h1> {name} </h1>
+    <div className="project-card-container" onClick={() => handleProjectPress(id)}>
+      <div style={{ backgroundImage: `url(${image})` }} className="project-image">
+        <h1> {name} </h1>
+      </div>
     </div>
   );
 };
