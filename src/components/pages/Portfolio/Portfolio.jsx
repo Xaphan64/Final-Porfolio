@@ -57,30 +57,6 @@ const Portfolio = () => {
           );
         })}
 
-        {ProjectList.map((project, index) => {
-          return (
-            <ProjectCard
-              key={index}
-              name={project.name}
-              image={project.image}
-              id={project.id}
-              handleProjectPress={handleProjectPress}
-            />
-          );
-        })}
-
-        {ProjectList.map((project, index) => {
-          return (
-            <ProjectCard
-              key={index}
-              name={project.name}
-              image={project.image}
-              id={project.id}
-              handleProjectPress={handleProjectPress}
-            />
-          );
-        })}
-
         {modal && <ProjectModal setModal={setModal} ProjectList={ProjectList} selectedProject={selectedProject} />}
       </div>
     </div>

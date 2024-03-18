@@ -58,26 +58,20 @@ const ProjectModal = ({ setModal, ProjectList, selectedProject }) => {
           <div className="modal-row">
             <div className="modal-item">
               <GitHubIcon />
-              <span>
-                GitHub:
-                <h3>
-                  <a href={project.github} rel="noreferrer" target="_blank">
-                    LINK HERE
-                  </a>
-                </h3>
-              </span>
+              <h3>
+                <a href={project.github} rel="noreferrer" target="_blank">
+                  Github
+                </a>
+              </h3>
             </div>
 
             <div className="modal-item">
               <OpenInNewIcon />
-              <span>
-                Preview:
-                <h3>
-                  <a href={project.redirect} rel="noreferrer" target="_blank">
-                    LINK HERE
-                  </a>
-                </h3>
-              </span>
+              <h3>
+                <a href={project.redirect} rel="noreferrer" target="_blank">
+                  Preview
+                </a>
+              </h3>
             </div>
           </div>
         </div>
