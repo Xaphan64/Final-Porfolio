@@ -15,6 +15,7 @@ import Sidemenu from "./components/sidemenu/Sidemenu";
 import Homepage from "./components/pages/Home/Homepage";
 import About from "./components/pages/About/About";
 import Portfolio from "./components/pages/Portfolio/Portfolio";
+import Contact from "./components/pages/Contact/Contact";
 
 // CONFIGURATION
 const App = () => {
@@ -55,7 +56,7 @@ const App = () => {
       {page === "home" && <Homepage handleSwitchPage={handleSwitchPage} />}
       {page === "about" && <About />}
       {page === "portfolio" && <Portfolio />}
-      {page === "contact" && <h1>contact page</h1>}
+      {page === "contact" && <Contact />}
 
       <Sidemenu showSidebar={showSidebar} page={page} handleSwitchPage={handleSwitchPage} />
     </div>

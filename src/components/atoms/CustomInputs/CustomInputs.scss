@@ -1,0 +1,31 @@
+input,
+textarea {
+  background-color: #252525;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  padding-left: 16px;
+  font-size: 16px;
+
+  &:focus {
+    border: 1px solid #ffb400;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: #757575;
+  }
+}
+
+input {
+  height: 48px;
+  width: 200px;
+}
+
+textarea {
+  padding-top: 16px;
+  width: 632px;
+  height: 200px;
+  resize: vertical;
+  //   position: absolute;
+}
