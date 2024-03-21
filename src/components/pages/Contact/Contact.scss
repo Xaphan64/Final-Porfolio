@@ -46,18 +46,75 @@
 
   .contact-body {
     display: flex;
-    align-items: center;
-    // justify-content: center;
-    // gap: 100px;
-    justify-content: space-evenly;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
     width: 100%;
 
-    border: 1px solid red;
-
-    .contact-text {
+    .contact-text-container {
       width: 20%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
 
-      border: 1px solid yellow;
+      h2 {
+        font-size: 28px;
+        white-space: nowrap;
+      }
+
+      .contact-details-container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .contact-details-item {
+          display: flex;
+          gap: 16px;
+
+          svg {
+            width: 40px;
+            height: 40px;
+            color: #ffb400;
+          }
+
+          .contact-details-text {
+            display: flex;
+            flex-direction: column;
+
+            .bold {
+              color: #ffffff;
+              font-weight: bold;
+              white-space: nowrap;
+            }
+            .top {
+              color: #a9a9a9;
+            }
+          }
+        }
+      }
+
+      .contact-details-buttons {
+        display: flex;
+        gap: 8px;
+
+        a {
+          text-decoration: none;
+
+          svg {
+            color: #ffffff;
+            width: 40px;
+            height: 40px;
+            background-color: #252525;
+            padding: 6px;
+            border-radius: 32px;
+
+            &:hover {
+              background-color: #ffb400;
+              transition: 0.5s;
+            }
+          }
+        }
+      }
     }
 
     .contact-inputs-container {
@@ -65,15 +122,117 @@
       flex-direction: column;
       gap: 32px;
 
-      border: 1px solid lightblue;
-
       .contact-inputs {
         display: flex;
         gap: 16px;
+
+        input {
+          height: 48px;
+          width: 13vw;
+        }
       }
 
       .contact-textarea {
-        // position: absolute;
+        textarea {
+          padding-top: 16px;
+          width: 41vw;
+          height: 200px;
+          resize: vertical;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .contact-container {
+    padding: 10px 0;
+    gap: 5%;
+
+    .contact-body {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+
+      .contact-text-container {
+        width: 80%;
+      }
+
+      .contact-inputs-container {
+        width: 80%;
+
+        .contact-inputs {
+          input {
+            width: 33%;
+          }
+        }
+
+        .contact-textarea {
+          textarea {
+            width: 100%;
+          }
+        }
+
+        .contact-button {
+          button {
+            border-radius: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .contact-container {
+    gap: 2.5%;
+
+    .contact-title {
+      h1 {
+        visibility: hidden;
+      }
+    }
+
+    .contact-inputs-container {
+      .contact-inputs {
+        flex-direction: column;
+
+        input {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .contact-container {
+    margin-top: 48px;
+
+    .contact-title {
+      h1 {
+        display: none;
+      }
+
+      .contact-front-title {
+        position: fixed;
+        background-color: #2b2a2a;
+        width: 100%;
+        top: 0;
+        padding: 4px 16px;
+
+        h2 {
+          font-size: 32px;
+        }
+      }
+    }
+    .contact-body {
+      gap: 16px;
+
+      .contact-text-container {
+        h2 {
+          font-size: 22px;
+        }
       }
     }
   }

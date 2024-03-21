@@ -40,7 +40,7 @@ const Contact = () => {
       </div>
 
       <div className="contact-body">
-        <div className="contact-text">
+        <div className="contact-text-container">
           <h2>DON'T BE SHY !</h2>
 
           <span>
@@ -52,16 +52,16 @@ const Contact = () => {
             <div className="contact-details-item">
               <DraftsIcon />
               <div className="contact-details-text">
-                <span>MAIL ME</span>
-                <span>alex_daniel@yahoo.com</span>
+                <span className="top">MAIL ME</span>
+                <span className="bold">alex_daniel@yahoo.com</span>
               </div>
             </div>
 
             <div className="contact-details-item">
               <ContactPhoneIcon />
               <div className="contact-details-text">
-                <span>CALL ME</span>
-                <span>+40 742 754 878</span>
+                <span className="top">CALL ME</span>
+                <span className="bold">+40 742 754 878</span>
               </div>
             </div>
           </div>
@@ -70,6 +70,7 @@ const Contact = () => {
             <a href="https://www.linkedin.com/in/alexandru-daniel-sarbu-b117861aa/" rel="noreferrer" target="_blank">
               <LinkedInIcon />
             </a>
+
             <a href="https://github.com/Xaphan64" rel="noreferrer" target="_blank">
               <GitHubIcon />
             </a>
