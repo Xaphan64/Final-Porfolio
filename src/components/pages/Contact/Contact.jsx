@@ -11,6 +11,8 @@ import CustomInput from "../../atoms/CustomInputs/CustomInput";
 import CustomTextarea from "../../atoms/CustomInputs/CustomTextarea";
 
 // LIBRARIES
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 // MISC
 
@@ -23,12 +25,61 @@ const Contact = () => {
   // API REQUESTS
 
   // LIBRARY CONSTANTS
+  const form = useRef();
 
   // STATE CONSTANTS
+  const [inputValues, setInputValues] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
   // LIFE CYCLE
 
   // EVENT HANDLERS
+  const handleInputChange = ({ target }) => {
+    setInputValues({
+      ...inputValues,
+      [target.name]: target.value,
+    });
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const serviceId = "service_02980xt";
+    const templateId = "template_ev3ltmo";
+    const publicKey = "tpQ6QjXIQbrarpv-I";
+
+    const templateParams = {
+      from_name: inputValues.name,
+      from_email: inputValues.email,
+      to_name: "Xaphan",
+      message: inputValues.message,
+    };
+
+    emailjs
+      .sendForm(serviceId, templateId, form.current, {
+        publicKey,
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+
+          setInputValues({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.log("FAILED...", error);
+        }
+      );
+  };
+
   return (
     <div className="contact-container">
       <div className="contact-title">
@@ -41,11 +92,11 @@ const Contact = () => {
 
       <div className="contact-body">
         <div className="contact-text-container">
-          <h2>DON'T BE SHY !</h2>
+          <h2>CONTACT ME!</h2>
 
           <span>
-            Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or
-            opportunities to be part of your visions.
+            I am interested in job opportunities - especially ambitious or large projects. However, if you have other
+            requests or questions, do not hesitate to contact me using the form.
           </span>
 
           <div className="contact-details-container">
@@ -77,26 +128,49 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="contact-inputs-container">
+        <form onSubmit={handleSubmit} ref={form} className="contact-form-container">
           <div className="contact-inputs">
-            <CustomInput placeholder="TEST" />
+            <CustomInput
+              type="text"
+              name="name"
+              value={inputValues.name}
+              onChange={handleInputChange}
+              placeholder="YOUR NAME"
+            />
 
-            <CustomInput />
+            <CustomInput
+              type="email"
+              name="email"
+              value={inputValues.email}
+              onChange={handleInputChange}
+              placeholder="YOUR EMAIL"
+            />
 
-            <CustomInput />
+            <CustomInput
+              type="text"
+              name="subject"
+              value={inputValues.subject}
+              onChange={handleInputChange}
+              placeholder="YOUR SUBJECT"
+            />
           </div>
 
           <div className="contact-textarea">
-            <CustomTextarea placeholder="TEST" />
+            <CustomTextarea
+              name="message"
+              value={inputValues.message}
+              onChange={handleInputChange}
+              placeholder="YOUR MESSAGE"
+            />
           </div>
 
           <div className="contact-button">
-            <button>
+            <button type="submit">
               <span>SEND MESSAGE</span>
               <SendIcon />
             </button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );

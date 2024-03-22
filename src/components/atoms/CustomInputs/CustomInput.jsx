@@ -27,7 +27,6 @@ const CustomInput = (props) => {
       name={props.name}
       placeholder={props.placeholder}
       onChange={props.onChange}
-      defaultValue={props.defaultValue}
       value={props.value}
       required
     />
