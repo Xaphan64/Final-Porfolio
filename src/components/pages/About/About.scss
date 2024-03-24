@@ -7,6 +7,28 @@
   gap: 10%;
   overflow-y: auto;
 
+  animation-name: changeContent;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+
+  @keyframes changeContent {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    75% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
   scrollbar-width: none;
   ::-webkit-scrollbar {
     display: none;
@@ -85,6 +107,15 @@
     .about-button {
       button {
         border: 1px solid #ffb400;
+        border-radius: 25px;
+        height: 48px;
+        padding: 0 16px;
+        background-color: #2b2a2a;
+        transition: 0.3s;
+
+        &:hover {
+          background-color: #ffb400;
+        }
 
         a {
           text-decoration: none;

@@ -7,6 +7,28 @@
   gap: 10%;
   overflow-y: auto;
 
+  animation-name: changeContent;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+
+  @keyframes changeContent {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    75% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
   scrollbar-width: none;
   ::-webkit-scrollbar {
     display: none;
@@ -107,6 +129,7 @@
       right: 8px;
       top: 8px;
       background: transparent;
+      border: none;
 
       svg {
         width: 48px;
@@ -158,6 +181,7 @@
               color: #ffffff;
 
               a {
+                user-select: none;
                 color: #ffb400;
               }
             }

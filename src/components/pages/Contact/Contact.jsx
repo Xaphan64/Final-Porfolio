@@ -28,6 +28,7 @@ const Contact = () => {
   const form = useRef();
 
   // STATE CONSTANTS
+  const [confirmationMessage, setConfirmationMessage] = useState(false);
   const [inputValues, setInputValues] = useState({
     name: "",
     email: "",
@@ -52,13 +53,6 @@ const Contact = () => {
     const templateId = "template_ev3ltmo";
     const publicKey = "tpQ6QjXIQbrarpv-I";
 
-    const templateParams = {
-      from_name: inputValues.name,
-      from_email: inputValues.email,
-      to_name: "Xaphan",
-      message: inputValues.message,
-    };
-
     emailjs
       .sendForm(serviceId, templateId, form.current, {
         publicKey,
@@ -73,6 +67,8 @@ const Contact = () => {
             subject: "",
             message: "",
           });
+
+          setConfirmationMessage(true);
         },
         (error) => {
           console.log("FAILED...", error);
@@ -172,6 +168,10 @@ const Contact = () => {
           </div>
         </form>
       </div>
+
+      {confirmationMessage && (
+        <h2 className="contact-message">You message has been sent, I will contact you as soon as possible.</h2>
+      )}
     </div>
   );
 };

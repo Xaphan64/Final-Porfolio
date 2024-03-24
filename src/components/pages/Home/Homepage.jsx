@@ -10,6 +10,7 @@ import "./Homepage.scss";
 // MISC
 
 // COMPONENTS
+import CustomButton from "../../atoms/CustomButton/CustomButton";
 
 // CONFIGURATION
 const Homepage = ({ handleSwitchPage }) => {

@@ -13,10 +13,17 @@
 
   .active {
     background-color: #ffb400;
+    // width: 48px;
+    // height: 48px;
+    // border-radius: 50%;
+    // display: flex;
+    // justify-content: center;
   }
 }
+
 @media screen and (max-width: 991px) {
   .sidemenu-container {
+    display: flex;
     position: absolute;
     justify-content: flex-start;
     padding: 32px 0;
@@ -24,14 +31,23 @@
     overflow-y: auto;
 
     &.open {
+      padding-top: 16px;
+      padding-left: 16px;
+      padding-right: 16px;
       background-color: #2b2a2a;
       width: 100vw;
       height: 100%;
       transition: width 0.3;
-      z-index: 10;
+      z-index: 8;
 
       .sidemenu-buttons {
         display: flex;
+        gap: 32px;
+
+        .active {
+          color: #ffb400;
+          background: transparent;
+        }
       }
     }
 
@@ -46,11 +62,6 @@
         visibility: hidden;
         transition: opacity 0.3s;
       }
-    }
-
-    .active {
-      color: #ffb400;
-      background: transparent;
     }
   }
 }

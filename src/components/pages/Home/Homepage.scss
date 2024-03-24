@@ -7,6 +7,28 @@
   z-index: 0;
   background: linear-gradient(76deg, #ffb400 25.1%, transparent 25.2%);
 
+  animation-name: changeContent;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+
+  @keyframes changeContent {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    75% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
   .homepage-image {
     img {
       border-radius: 40px;
@@ -42,22 +64,25 @@
     }
 
     .homepage-button {
-      // width: 50%;
       width: 500px;
 
       button {
         border: 1px solid #ffb400;
+        border-radius: 25px;
+        background-color: #2b2a2a;
+        color: #ffffff;
+        height: 48px;
+        padding: 0 16px;
+        font-size: 18px;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.3s;
 
-        // svg {
-        //   background-color: #ffb400;
-        //   border-radius: 20px;
-        // }
-
-        // &:hover {
-        //   span {
-        //     background-color: #ffb400;
-        //   }
-        // }
+        &:hover {
+          background-color: #ffb400;
+        }
       }
     }
   }

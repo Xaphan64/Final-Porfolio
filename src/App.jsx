@@ -28,19 +28,37 @@ const App = () => {
   // STATE CONSTANTS
   const [page, setPage] = useState("home");
   const [showSidebar, setShowSidebar] = useState(false);
+  const [animate, setAnimate] = useState(false);
 
   // LIFE CYCLE
   useEffect(() => {
     setShowSidebar(false);
+    setAnimate(true);
+
+    const timeout = setTimeout(() => setAnimate(false), 2000);
+
+    return () => {
+      clearTimeout(timeout);
+    };
   }, [page]);
 
   // EVENT HANDLERS
   const handleSwitchPage = (page) => {
-    setPage(page);
+    setAnimate(true);
+    setTimeout(() => setPage(page), 500);
   };
 
   return (
     <div className="app-container">
+      {animate && (
+        <>
+          <div className="animation-dark" />
+          <div className="animation-dark-second" />
+          <div className="animation-orange" />
+          <div className="animation-orange-second" />
+        </>
+      )}
+
       <div className="mobile-button">
         {showSidebar ? (
           <button onClick={() => setShowSidebar((prev) => !prev)}>

@@ -22,9 +22,17 @@ const CustomButton = (props) => {
 
   // EVENT HANDLERS
   return (
-    <button type={props.type} onClick={props.onClick} className={props.className}>
-      {props.children}
-    </button>
+    <div className="button-container" onClick={props.onClick}>
+      <button type={props.type} className={props.className}>
+        {props.children}
+
+        <span className="button-mobile">{props.text}</span>
+      </button>
+
+      <div className="expanded-side">
+        <span>{props.text}</span>
+      </div>
+    </div>
   );
 };
 

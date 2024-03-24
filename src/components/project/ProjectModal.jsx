@@ -8,6 +8,7 @@ import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 // STYLES
 
 // LIBRARIES
+import { useEffect, useRef } from "react";
 
 // MISC
 
@@ -20,13 +21,31 @@ const ProjectModal = ({ setModal, ProjectList, selectedProject }) => {
   // API REQUESTS
 
   // LIBRARY CONSTANTS
+  let menuRef = useRef();
+  const isMobile = window.matchMedia("(max-width: 991px")?.matches;
   const project = ProjectList.find((project) => project.id === selectedProject);
 
-  if (!selectedProject) return null;
+  // if (!selectedProject) return null;
 
   // STATE CONSTANTS
 
   // LIFE CYCLE
+  useEffect(() => {
+    if (!isMobile) {
+      let handler = (event) => {
+        if (!menuRef.current.contains(event.target)) {
+          setModal(false);
+        }
+      };
+
+      document.addEventListener("mousedown", handler);
+
+      return () => {
+        document.removeEventListener("mousedown", handler);
+      };
+    }
+    // eslint-disable-next-line
+  }, []);
 
   // EVENT HANDLERS
   return (
@@ -34,7 +53,7 @@ const ProjectModal = ({ setModal, ProjectList, selectedProject }) => {
       <button onClick={() => setModal(false)}>
         <CloseIcon />
       </button>
-      <div className="modal-container">
+      <div className="modal-container" ref={menuRef}>
         <h1> {project.name} </h1>
         <div className="modal-details">
           <div className="modal-row">

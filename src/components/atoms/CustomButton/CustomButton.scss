@@ -1,48 +1,105 @@
-button {
-  border: none;
-  display: flex;
-  align-items: center;
-  // justify-content: center;
-  // justify-content: flex-end;
-  justify-content: space-between;
-  cursor: pointer;
-  height: 48px;
-  border-radius: 25px;
-  // padding: 0 8px;
-  padding: 0 16px;
-  gap: 16px;
-  font-size: 18px;
-  transition: 0.3s;
-  background-color: #2b2a2a;
-  color: #ffffff;
+@media screen and (min-width: 992px) {
+  .button-container {
+    position: relative;
+    user-select: none;
 
-  //   width: 50px;
+    &:hover > div {
+      background-color: #ffb400;
+      width: 120px;
+      // padding: 10px 15px;
+      transition: 0.3s ease-in-out;
+    }
 
-  // span {
-  //   display: none;
-  // }
+    &:hover > div > span {
+      opacity: 1;
+      transition: 0.3s ease-in-out;
+    }
 
-  svg {
-    min-width: 32px;
-    min-height: 32px;
-  }
+    &:hover > button {
+      background-color: #ffb400;
+    }
 
-  &:hover {
-    background-color: #ffb400;
-    // width: 170px;
+    button {
+      border: none;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      height: 48px;
+      width: 48px;
+      border-radius: 50%;
+      padding: 0 16px;
+      gap: 16px;
+      font-size: 18px;
+      background-color: #2b2a2a;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s ease-in-out;
 
-    // span {
-    //   display: block;
-    //   font-weight: 600;
-    //   padding-left: 16px;
-    // }
+      &:hover {
+        background-color: #ffb400;
+      }
+      svg {
+        z-index: 2;
+      }
+
+      .button-mobile {
+        display: none;
+      }
+    }
+
+    .expanded-side {
+      width: 0;
+      transition: 0.3s ease-in-out;
+      position: absolute;
+      right: 28px;
+      top: 0;
+      height: 100%;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      span {
+        opacity: 0;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 991px) {
-  button {
-    justify-content: flex-start;
+  .button-container {
+    display: flex;
+    align-items: center;
     border-bottom: 1px solid #333333;
-    border-radius: 0;
+    cursor: pointer;
+
+    button {
+      border: none;
+      border-radius: 0;
+      background: transparent;
+      color: #ffffff;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+
+      span {
+        font-size: 20px;
+      }
+    }
+
+    .expanded-side {
+      display: none;
+    }
   }
 }

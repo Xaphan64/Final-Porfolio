@@ -31,33 +31,39 @@ const Sidemenu = ({ handleSwitchPage, page, showSidebar }) => {
   return (
     <div className={`sidemenu-container ${showSidebar ? "open" : "close"}`}>
       <div className="sidemenu-buttons">
-        <CustomButton onClick={() => handleSwitchPage("home")} className={page === "home" ? "active" : "inactive"}>
+        <CustomButton
+          onClick={() => handleSwitchPage("home")}
+          text="HOME"
+          className={page === "home" ? "active" : "inactive"}
+        >
           {isMobile && <HomeIcon />}
-          <span>HOME</span>
           {!isMobile && <HomeIcon />}
         </CustomButton>
 
-        <CustomButton onClick={() => handleSwitchPage("about")} className={page === "about" ? "active" : "inactive"}>
+        <CustomButton
+          onClick={() => handleSwitchPage("about")}
+          text="ABOUT"
+          className={page === "about" ? "active" : "inactive"}
+        >
           {isMobile && <PersonIcon />}
-          <span>ABOUT</span>
           {!isMobile && <PersonIcon />}
         </CustomButton>
 
         <CustomButton
           onClick={() => handleSwitchPage("portfolio")}
+          text="PORTFOLIO"
           className={page === "portfolio" ? "active" : "inactive"}
         >
           {isMobile && <WorkIcon />}
-          <span>PORTFOLIO</span>
           {!isMobile && <WorkIcon />}
         </CustomButton>
 
         <CustomButton
           onClick={() => handleSwitchPage("contact")}
+          text="CONTACT"
           className={page === "contact" ? "active" : "inactive"}
         >
           {isMobile && <DraftsIcon />}
-          <span>CONTACT</span>
           {!isMobile && <DraftsIcon />}
         </CustomButton>
       </div>
