@@ -1,6 +1,7 @@
-import blog from "../assets/blog_preview.jpg";
-import pm from "../assets/pm_preview.avif";
-import ecommerce from "../assets/ecommerce_preview.webp";
+import blog from "../assets/blog.jpg";
+import pm from "../assets/pm.avif";
+import ecommerce from "../assets/ecommerce.webp";
+import rental from "../assets/rental.webp";
 
 export const ProjectList = [
   {
@@ -10,7 +11,7 @@ export const ProjectList = [
     image: blog,
     skills: "HTML, SASS, JavaScript, Fetch API",
     github: "https://github.com/Xaphan64/The-Blogs",
-    redirect: "N/A",
+    redirect: "https://the-blogs.vercel.app/",
   },
 
   {
@@ -30,6 +31,15 @@ export const ProjectList = [
     image: ecommerce,
     skills: "HTML, SASS, JavaScript, Local Storage, Axios",
     github: "https://github.com/Xaphan64/aStore",
+    redirect: "N/A",
+  },
+  {
+    id: 4,
+    name: "DriveEase",
+    type: "Rental App (work in progress)",
+    image: rental,
+    skills: "HTML, Styled Components, Typescript",
+    github: "https://github.com/Xaphan64/DriveEase",
     redirect: "N/A",
   },
 ];
