@@ -10,7 +10,6 @@ import "./Homepage.scss";
 // MISC
 
 // COMPONENTS
-import CustomButton from "../../atoms/CustomButton/CustomButton";
 
 // CONFIGURATION
 const Homepage = ({ handleSwitchPage }) => {
@@ -39,7 +38,7 @@ const Homepage = ({ handleSwitchPage }) => {
 
         <span className="homepage-text">
           I'm an Online Requirements/Networking Specialist with a passion for Front-End development. Dedicated to
-          mastering React JS, JavaScript, SASS, and HTML, with a dream to become a full-time React developer.
+          mastering React, JavaScript, SASS, and HTML, with a dream to become a full-time React developer.
         </span>
 
         <div className="homepage-button" onClick={() => handleSwitchPage("about")}>

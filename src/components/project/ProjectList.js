@@ -31,7 +31,7 @@ export const ProjectList = [
     image: ecommerce,
     skills: "HTML, SASS, JavaScript, Local Storage, Axios",
     github: "https://github.com/Xaphan64/aStore",
-    redirect: "N/A",
+    redirect: "https://a-store-six.vercel.app/",
   },
   {
     id: 4,
