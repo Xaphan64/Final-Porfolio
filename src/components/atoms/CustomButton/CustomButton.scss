@@ -3,20 +3,20 @@
     position: relative;
     user-select: none;
 
-    &:hover > div {
-      background-color: #ffb400;
-      width: 120px;
-      // padding: 10px 15px;
-      transition: 0.3s ease-in-out;
-    }
+    &:hover {
+      div {
+        background-color: #ffb400;
+        width: 120px;
+        transition: 0.3s ease-in-out;
 
-    &:hover > div > span {
-      opacity: 1;
-      transition: 0.3s ease-in-out;
-    }
-
-    &:hover > button {
-      background-color: #ffb400;
+        span {
+          opacity: 1;
+          transition: 0.3s ease-in-out;
+        }
+      }
+      button {
+        background-color: #ffb400;
+      }
     }
 
     button {
@@ -35,11 +35,12 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: 0.3s ease-in-out;
+      transition: 0.1s ease-in-out;
 
       &:hover {
         background-color: #ffb400;
       }
+
       svg {
         z-index: 2;
       }
@@ -51,7 +52,7 @@
 
     .expanded-side {
       width: 0;
-      transition: 0.3s ease-in-out;
+      transition: 0.1s ease-in-out;
       position: absolute;
       right: 28px;
       top: 0;
