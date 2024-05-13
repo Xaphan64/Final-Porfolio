@@ -40,6 +40,6 @@ export const ProjectList = [
     image: rental,
     skills: "HTML, Styled Components, Typescript",
     github: "https://github.com/Xaphan64/DriveEase",
-    redirect: "N/A",
+    redirect: "https://drive-ease-one.vercel.app/",
   },
 ];

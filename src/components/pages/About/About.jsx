@@ -3,7 +3,7 @@ import cv from "../../assets/CV_Alexandru-Daniel_Sarbu_2024.pdf";
 import DownloadIcon from "@mui/icons-material/Download";
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
-import profilePic from "./../../assets/placeholder.webp";
+import profilePic from "./../../assets/profilePic.png";
 
 // STYLES
 import "./About.scss";
