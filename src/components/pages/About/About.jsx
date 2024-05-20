@@ -3,7 +3,7 @@ import cv from "../../assets/CV_Alexandru-Daniel_Sarbu_2024.pdf";
 import DownloadIcon from "@mui/icons-material/Download";
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
-import profilePic from "./../../assets/profilePic.png";
+import profilePic from "./../../assets/profilePic.jpg";
 
 // STYLES
 import "./About.scss";
@@ -73,7 +73,7 @@ const About = () => {
             </span>
 
             <span className="about-details-item">
-              Email :<span className="about-details-text"> alex_daniel64@yahoo.com</span>
+              Email :<span className="about-details-text"> alexandrusarbu64@gmail.com</span>
             </span>
 
             <span className="about-details-item">

@@ -1,5 +1,5 @@
 // ASSETS
-import profilePic from "./../../assets/profilePic.png";
+import profilePic from "./../../assets/profilePic.jpg";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 // STYLES
