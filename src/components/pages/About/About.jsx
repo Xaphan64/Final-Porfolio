@@ -1,5 +1,5 @@
 // ASSETS
-import cv from "../../assets/CV_Alexandru-Daniel_Sarbu_2024.pdf";
+import cv from "../../assets/Alexandru_Daniel_Sarbu_CV_Updated.pdf";
 import DownloadIcon from "@mui/icons-material/Download";
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
@@ -55,7 +55,7 @@ const About = () => {
             </span>
 
             <span className="about-details-item">
-              Age :<span className="about-details-text"> 29 Years</span>
+              Age :<span className="about-details-text"> 30 Years</span>
             </span>
 
             <span className="about-details-item">
@@ -100,7 +100,7 @@ const About = () => {
         <div className="about-skills">
           <div className="about-skills-item">
             <h3>Front-End</h3>
-            <span>React JS, HTML, SASS, Java Script</span>
+            <span>React, HTML, SASS, Java Script, Type Script, Styled Components</span>
           </div>
 
           <div className="about-skills-item">
