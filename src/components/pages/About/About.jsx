@@ -1,5 +1,5 @@
 // ASSETS
-import cv from "../../assets/Alexandru_Daniel_Sarbu_CV_Updated.pdf";
+import cv from "../../assets/Alexandru-Daniel_Sarbu_CV_July_Updated.pdf";
 import DownloadIcon from "@mui/icons-material/Download";
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
@@ -237,9 +237,9 @@ const About = () => {
                 </div>
 
                 <div className="item-description">
-                  I significantly contributed to team development by reinforcing adherence to Jira QC processes,
-                  orchestrating efficient testing efforts, actively engaging in QC-Dev meetings, troubleshooting issues
-                  and leveraging automation tools for enhanced project efficiency.
+                  Contributed to team development by reinforcing adherence to Jira QC processes, orchestrating efficient
+                  testing efforts, actively engaging in QC-Dev meetings, troubleshooting issues and leveraging
+                  automation tools for enhanced project efficiency.
                 </div>
               </div>
             </div>
