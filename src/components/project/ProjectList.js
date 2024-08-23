@@ -36,7 +36,7 @@ export const ProjectList = [
   {
     id: 4,
     name: "DriveEase",
-    type: "Rental App (work in progress)",
+    type: "Rental App",
     image: rental,
     skills: "HTML, Styled Components, Typescript",
     github: "https://github.com/Xaphan64/DriveEase",
