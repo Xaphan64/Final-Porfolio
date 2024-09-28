@@ -1,7 +1,6 @@
 // ASSETS
 import cv from "../../assets/Alexandru-Daniel_Sarbu_CV_July_Updated.pdf";
 import DownloadIcon from "@mui/icons-material/Download";
-import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
 import profilePic from "./../../assets/profilePic.jpg";
 
@@ -141,33 +140,10 @@ const About = () => {
       <hr />
 
       <div className="about-experience-container">
-        <h2>EXPERIENCE & EDUCATION</h2>
+        <h2>EXPERIENCE</h2>
 
         <div className="about-experience">
           <div className="about-experience-row">
-            <div className="about-experience-item">
-              <div className="icon-container">
-                <SchoolIcon />
-
-                <hr />
-              </div>
-
-              <div className="item-container">
-                <div className="item-period">
-                  <span>2013 - 2017</span>
-                </div>
-
-                <div className="item-position">
-                  <h3>CHEMICAL ENGINEER</h3>
-                  <h4>- Politehnica University of Bucharest</h4>
-                </div>
-
-                <div className="item-description">
-                  Faculty of Chemical Engineering and Biotechnologies <br /> Bioresources and Polymer Science department
-                </div>
-              </div>
-            </div>
-
             <div className="about-experience-item">
               <div className="icon-container">
                 <WorkIcon />
@@ -216,9 +192,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="about-experience-row">
             <div className="about-experience-item">
               <div className="icon-container">
                 <WorkIcon />
@@ -243,7 +217,9 @@ const About = () => {
                 </div>
               </div>
             </div>
+          </div>
 
+          <div className="about-experience-row">
             <div className="about-experience-item">
               <div className="icon-container">
                 <WorkIcon />
@@ -264,6 +240,31 @@ const About = () => {
                 <div className="item-description">
                   Conducted thorough online tests, provided detailed feedback, demonstrated adept project management
                   skills, and ensured thorough documentation while staying aligned with project requirements.
+                </div>
+              </div>
+            </div>
+
+            <div className="about-experience-item">
+              <div className="icon-container">
+                <WorkIcon />
+
+                <hr />
+              </div>
+
+              <div className="item-container">
+                <div className="item-period">
+                  <span>Sept 2021 - present</span>
+                </div>
+
+                <div className="item-position">
+                  <h3>REACT DEVELOPER</h3>
+                  <h4>- Freelance</h4>
+                </div>
+
+                <div className="item-description">
+                  Developed responsive web applications using JavaScript, TypeScript, styled components and SASS.
+                  Integrated APIs, built user-friendly interfaces, and ensured high performance through thorough testing
+                  and debugging across multiple freelance projects.
                 </div>
               </div>
             </div>
