@@ -140,7 +140,7 @@ const About = () => {
       <hr />
 
       <div className="about-experience-container">
-        <h2>EXPERIENCE</h2>
+        <h2>WORK EXPERIENCE</h2>
 
         <div className="about-experience">
           <div className="about-experience-row">
