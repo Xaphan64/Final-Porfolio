@@ -2,7 +2,7 @@
 import cv from "../../assets/Alexandru-Daniel_Sarbu_CV_July_Updated.pdf";
 import DownloadIcon from "@mui/icons-material/Download";
 import WorkIcon from "@mui/icons-material/Work";
-import profilePic from "./../../assets/profilePic.jpg";
+import profilePicture from "./../../assets/profilePicture.jpg";
 
 // STYLES
 import "./About.scss";
@@ -40,7 +40,7 @@ const About = () => {
         <h2>PERSONAL INFOS</h2>
 
         <div className="about-image">
-          <img src={profilePic} alt="profilePic" />
+          <img src={profilePicture} alt="profilePic" />
         </div>
 
         <div className="about-details">

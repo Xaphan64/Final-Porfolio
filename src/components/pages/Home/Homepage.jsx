@@ -1,5 +1,5 @@
 // ASSETS
-import profilePic from "./../../assets/profilePic.jpg";
+import profilePicture from "./../../assets/profilePicture.jpg";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 // STYLES
@@ -27,7 +27,7 @@ const Homepage = ({ handleSwitchPage }) => {
   return (
     <div className="homepage-container">
       <div className="homepage-image">
-        <img src={profilePic} alt="profilePic" />
+        <img src={profilePicture} alt="profilePic" />
       </div>
 
       <div className="homepage-text-container">
