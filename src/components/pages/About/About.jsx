@@ -1,5 +1,5 @@
 // ASSETS
-import cv from "../../assets/Alexandru-Daniel_Sarbu_CV_July_Updated.pdf";
+import cv from "../../assets/Alexandru-Daniel_Sarbu_CV_2025_Updated.pdf";
 import DownloadIcon from "@mui/icons-material/Download";
 import WorkIcon from "@mui/icons-material/Work";
 import profilePicture from "./../../assets/profilePicture.jpg";
@@ -103,7 +103,7 @@ const About = () => {
           </div>
 
           <div className="about-skills-item">
-            <h3>Online Requirements/ Networking Specialist</h3>
+            <h3>Manual QA</h3>
             <span>
               Software Quality, Test Management, Testrail, Project Planning, Software Quality Assurance, Software
               Development Cycle, Networking
@@ -111,7 +111,7 @@ const About = () => {
           </div>
 
           <div className="about-skills-item">
-            <h3>Online Requirements Specialist</h3>
+            <h3>Junior Manual QA</h3>
             <span>Project Management, Harbour, Online Services, Test Coverage, API Testing, Online Tests</span>
           </div>
 
@@ -163,7 +163,7 @@ const About = () => {
 
                 <div className="item-description">
                   Contributed extensively to comprehensive testing and collaboration within the Tom Clancy's franchise,
-                  mastering various tools and platforms, while providing valuable support on diverse projects.
+                  mastering various tools and platforms while providing valuable support on diverse projects.
                 </div>
               </div>
             </div>
@@ -187,7 +187,7 @@ const About = () => {
 
                 <div className="item-description">
                   Demonstrated exceptional leadership and proficiency within the Tom Clancy's Franchise, maintaining
-                  rigorous quality standards, fostering autonomy, and providing comprehensive documentation and reports
+                  rigorous quality standards, fostering autonomy and providing comprehensive documentation and reports
                   to ensure effective team performance.
                 </div>
               </div>
@@ -233,38 +233,14 @@ const About = () => {
                 </div>
 
                 <div className="item-position">
-                  <h3>ONLINE REQUIREMENTS SPECIALIST</h3>
+                  <h3>JUNIOR MANUAL QA</h3>
                   <h4>- Ubisoft Bucharest</h4>
                 </div>
 
                 <div className="item-description">
-                  Conducted thorough online tests, provided detailed feedback, demonstrated adept project management
-                  skills, and ensured thorough documentation while staying aligned with project requirements.
-                </div>
-              </div>
-            </div>
-
-            <div className="about-experience-item">
-              <div className="icon-container">
-                <WorkIcon />
-
-                <hr />
-              </div>
-
-              <div className="item-container">
-                <div className="item-period">
-                  <span>Sept 2021 - present</span>
-                </div>
-
-                <div className="item-position">
-                  <h3>REACT DEVELOPER</h3>
-                  <h4>- Freelance</h4>
-                </div>
-
-                <div className="item-description">
-                  Developed responsive web applications using JavaScript, TypeScript, styled components and SASS.
-                  Integrated APIs, built user-friendly interfaces, and ensured high performance through thorough testing
-                  and debugging across multiple freelance projects.
+                  QA tester with experience in test planning, manual and functional testing across multiple platforms.
+                  Experience in gray box testing using internal tools. Acted as a key liaison between teams, provided
+                  detailed test reports and optimized issue tracking with Jira dashboards.
                 </div>
               </div>
             </div>
@@ -282,15 +258,40 @@ const About = () => {
                 </div>
 
                 <div className="item-position">
-                  <h3>ONLINE REQUIREMENTS/NETWORKING SPECIALIST</h3>
+                  <h3>MANUAL QA</h3>
 
                   {/* <h4>- Ubisoft Bucharest</h4> */}
                 </div>
 
                 <div className="item-description">
-                  Continuously conducted online tests, provided constructive feedback, assessed Quality of Service,
-                  optimized matchmaking systems, and facilitated project management efforts, including tutorials and
-                  documentation.
+                  Manual QA experienced in functional, regression and performance testing. Assisted junior specialists
+                  with SRS, collaborated with developers on compliance and updates. Created test cases, developed
+                  TestRail tutorials and conducted networking tests.
+                </div>
+              </div>
+            </div>
+
+            <div className="about-experience-item">
+              <div className="icon-container">
+                <WorkIcon />
+
+                <hr />
+              </div>
+
+              <div className="item-container">
+                <div className="item-period">
+                  <span>Sept 2023 - present</span>
+                </div>
+
+                <div className="item-position">
+                  <h3>REACT DEVELOPER</h3>
+                  <h4>- Freelance</h4>
+                </div>
+
+                <div className="item-description">
+                  Developed responsive web applications using JavaScript, TypeScript, styled components and SASS.
+                  Integrated APIs, built user-friendly interfaces, and ensured high performance through thorough testing
+                  and debugging across multiple freelance projects.
                 </div>
               </div>
             </div>

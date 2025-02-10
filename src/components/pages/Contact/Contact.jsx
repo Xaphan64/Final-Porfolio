@@ -114,7 +114,7 @@ const Contact = () => {
           </div>
 
           <div className="contact-details-buttons">
-            <a href="https://www.linkedin.com/in/alexandru-daniel-sarbu-b117861aa/" rel="noreferrer" target="_blank">
+            <a href="https://www.linkedin.com/in/ads64/" rel="noreferrer" target="_blank">
               <LinkedInIcon />
             </a>
 
