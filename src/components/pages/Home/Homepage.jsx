@@ -39,7 +39,7 @@ const Homepage = ({ handleSwitchPage }) => {
         <span className="homepage-text">
           I'm a Freelance React developer specializing in building responsive and dynamic web applications. Skilled in
           React, JavaScript, SASS and API integration, with a focus on creating intuitive user interfaces and ensuring
-          optimal performance aiming to transition into a full-time React developer.
+          optimal performance looking for freelance projects.
         </span>
 
         <div className="homepage-button" onClick={() => handleSwitchPage("about")}>
