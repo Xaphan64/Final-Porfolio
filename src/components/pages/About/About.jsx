@@ -1,5 +1,5 @@
 // ASSETS
-import cv from "../../assets/Alexandru-Daniel_Sarbu_CV_2025_Updated.pdf";
+import cv from "../../assets/Alexandru_Daniel_Sarbu_CV_2025_April.pdf";
 import DownloadIcon from "@mui/icons-material/Download";
 import WorkIcon from "@mui/icons-material/Work";
 import profilePicture from "./../../assets/profilePicture.jpg";
