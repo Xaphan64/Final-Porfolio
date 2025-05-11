@@ -233,7 +233,7 @@ const About = () => {
                 </div>
 
                 <div className="item-position">
-                  <h3>JUNIOR MANUAL QA</h3>
+                  <h3>JUNIOR SOFTWARE TESTER</h3>
                   <h4>- Ubisoft Bucharest</h4>
                 </div>
 
@@ -258,7 +258,7 @@ const About = () => {
                 </div>
 
                 <div className="item-position">
-                  <h3>MANUAL QA</h3>
+                  <h3>SOFTWARE TESTER</h3>
 
                   {/* <h4>- Ubisoft Bucharest</h4> */}
                 </div>
