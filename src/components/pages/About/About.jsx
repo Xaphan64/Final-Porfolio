@@ -54,7 +54,7 @@ const About = () => {
             </span>
 
             <span className="about-details-item">
-              Age :<span className="about-details-text"> 30 Years</span>
+              Age :<span className="about-details-text"> 31 Years</span>
             </span>
 
             <span className="about-details-item">
@@ -103,7 +103,7 @@ const About = () => {
           </div>
 
           <div className="about-skills-item">
-            <h3>Manual QA</h3>
+            <h3>Software Tester</h3>
             <span>
               Software Quality, Test Management, Testrail, Project Planning, Software Quality Assurance, Software
               Development Cycle, Networking
@@ -111,7 +111,7 @@ const About = () => {
           </div>
 
           <div className="about-skills-item">
-            <h3>Junior Manual QA</h3>
+            <h3>Junior Software Tester</h3>
             <span>Project Management, Harbour, Online Services, Test Coverage, API Testing, Online Tests</span>
           </div>
 
