@@ -1,5 +1,5 @@
 // ASSETS
-import cv from "../../assets/Alexandru_Daniel_Sarbu_CV_2025_April.pdf";
+import cv from "../../assets/ADS_Developer.pdf";
 import DownloadIcon from "@mui/icons-material/Download";
 import WorkIcon from "@mui/icons-material/Work";
 import profilePicture from "./../../assets/profilePicture.jpg";
@@ -99,11 +99,11 @@ const About = () => {
         <div className="about-skills">
           <div className="about-skills-item">
             <h3>Front-End</h3>
-            <span>React, HTML, SASS, Java Script, Type Script, Styled Components</span>
+            <span>React, HTML, SASS, CSS, Java Script, Type Script, Styled Components</span>
           </div>
 
           <div className="about-skills-item">
-            <h3>Software Tester</h3>
+            <h3>QA Specialist</h3>
             <span>
               Software Quality, Test Management, Testrail, Project Planning, Software Quality Assurance, Software
               Development Cycle, Networking
@@ -111,12 +111,12 @@ const About = () => {
           </div>
 
           <div className="about-skills-item">
-            <h3>Junior Software Tester</h3>
+            <h3>Software QA Analyst</h3>
             <span>Project Management, Harbour, Online Services, Test Coverage, API Testing, Online Tests</span>
           </div>
 
           <div className="about-skills-item">
-            <h3>Task Lead and Coordinator</h3>
+            <h3>QC Coordinator/ Task Lead</h3>
             <span>DTest, Test Automation, Teabox, Time Management, Test Coordination</span>
           </div>
 
@@ -206,7 +206,7 @@ const About = () => {
                 </div>
 
                 <div className="item-position">
-                  <h3>TASK LEAD & COORDINATOR</h3>
+                  <h3>QC COORDINATOR/ TASK LEAD</h3>
                   <h4>- Ubisoft Bucharest</h4>
                 </div>
 
@@ -233,12 +233,12 @@ const About = () => {
                 </div>
 
                 <div className="item-position">
-                  <h3>JUNIOR SOFTWARE TESTER</h3>
+                  <h3>SOFTWARE QA ANALYST</h3>
                   <h4>- Ubisoft Bucharest</h4>
                 </div>
 
                 <div className="item-description">
-                  QA tester with experience in test planning, manual and functional testing across multiple platforms.
+                  QA analyst with experience in test planning, manual and functional testing across multiple platforms.
                   Experience in gray box testing using internal tools. Acted as a key liaison between teams, provided
                   detailed test reports and optimized issue tracking with Jira dashboards.
                 </div>
@@ -258,13 +258,13 @@ const About = () => {
                 </div>
 
                 <div className="item-position">
-                  <h3>SOFTWARE TESTER</h3>
+                  <h3>QA SPECIALIST</h3>
 
-                  {/* <h4>- Ubisoft Bucharest</h4> */}
+                  <h4>- Ubisoft Bucharest</h4>
                 </div>
 
                 <div className="item-description">
-                  Manual QA experienced in functional, regression and performance testing. Assisted junior specialists
+                  QA experienced tester in functional, regression and performance testing. Assisted junior specialists
                   with SRS, collaborated with developers on compliance and updates. Created test cases, developed
                   TestRail tutorials and conducted networking tests.
                 </div>
@@ -280,7 +280,7 @@ const About = () => {
 
               <div className="item-container">
                 <div className="item-period">
-                  <span>Sept 2023 - present</span>
+                  <span>Sept 2022 - present</span>
                 </div>
 
                 <div className="item-position">
