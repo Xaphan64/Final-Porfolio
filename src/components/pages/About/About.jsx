@@ -1,5 +1,5 @@
 // ASSETS
-import cv from "../../assets/ADS_Developer.pdf";
+import cv from "../../assets/Alexandru_Daniel_Sarbu_React_Developer_CV.pdf";
 import DownloadIcon from "@mui/icons-material/Download";
 import WorkIcon from "@mui/icons-material/Work";
 import profilePicture from "./../../assets/profilePicture.jpg";
@@ -46,7 +46,8 @@ const About = () => {
         <div className="about-details">
           <div className="about-details-row">
             <span className="about-details-item">
-              First Name :<span className="about-details-text"> Alexandru-Daniel</span>
+              First Name :
+              <span className="about-details-text"> Alexandru-Daniel</span>
             </span>
 
             <span className="about-details-item">
@@ -64,26 +65,38 @@ const About = () => {
 
           <div className="about-details-row">
             <span className="about-details-item">
-              Address :<span className="about-details-text"> Bucharest, Romania</span>
+              Address :
+              <span className="about-details-text"> Bucharest, Romania</span>
             </span>
 
             <span className="about-details-item">
-              Phone :<span className="about-details-text"> +40 742 754 878</span>
+              Phone :
+              <span className="about-details-text"> +40 742 754 878</span>
             </span>
 
             <span className="about-details-item">
-              Email :<span className="about-details-text"> alexandrusarbu64@gmail.com</span>
+              Email :
+              <span className="about-details-text">
+                {" "}
+                alexandrusarbu64@gmail.com
+              </span>
             </span>
 
             <span className="about-details-item">
-              Languages :<span className="about-details-text"> Romanian, English</span>
+              Languages :
+              <span className="about-details-text"> Romanian, English</span>
             </span>
           </div>
         </div>
 
         <div className="about-button">
           <button>
-            <a href={cv} download="CV_Alexandru-Daniel_Sarbu" target="_blank" rel="noreferrer">
+            <a
+              href={cv}
+              download="CV_Alexandru-Daniel_Sarbu"
+              target="_blank"
+              rel="noreferrer"
+            >
               <span>DOWNLOAD CV</span>
               <DownloadIcon />
             </a>
@@ -99,39 +112,48 @@ const About = () => {
         <div className="about-skills">
           <div className="about-skills-item">
             <h3>Front-End</h3>
-            <span>React, HTML, SASS, CSS, Java Script, Type Script, Styled Components</span>
-          </div>
-
-          <div className="about-skills-item">
-            <h3>QA Specialist</h3>
             <span>
-              Software Quality, Test Management, Testrail, Project Planning, Software Quality Assurance, Software
-              Development Cycle, Networking
+              React, HTML, SASS, CSS, Java Script, Type Script, Styled
+              Components
             </span>
           </div>
 
           <div className="about-skills-item">
-            <h3>Software QA Analyst</h3>
-            <span>Project Management, Harbour, Online Services, Test Coverage, API Testing, Online Tests</span>
-          </div>
-
-          <div className="about-skills-item">
-            <h3>QC Coordinator/ Task Lead</h3>
-            <span>DTest, Test Automation, Teabox, Time Management, Test Coordination</span>
-          </div>
-
-          <div className="about-skills-item">
-            <h3>Task Lead</h3>
+            <h3>Software Tester</h3>
             <span>
-              Test Processes, Task Management, Issue Management, Microsoft Outlook, Test Cases, Jira Dashboards, Daily
-              Reports, Coaching
+              Software Quality, Test Management, Testrail, Project Planning,
+              Software Quality Assurance, Software Development Cycle, Networking
+            </span>
+          </div>
+
+          <div className="about-skills-item">
+            <h3>Manual Tester</h3>
+            <span>
+              Project Management, Harbour, Online Services, Test Coverage, API
+              Testing, Online Tests
+            </span>
+          </div>
+
+          <div className="about-skills-item">
+            <h3>Senior Game Tester</h3>
+            <span>
+              DTest, Test Automation, Teabox, Time Management, Test Coordination
             </span>
           </div>
 
           <div className="about-skills-item">
             <h3>Game Tester</h3>
             <span>
-              Jira, Microsoft Office, Quality Assurance, Issue Reporting, Game Testing, Confluence, Video Games
+              Test Processes, Task Management, Issue Management, Microsoft
+              Outlook, Test Cases, Jira Dashboards, Daily Reports, Coaching
+            </span>
+          </div>
+
+          <div className="about-skills-item">
+            <h3>Junior Game Tester</h3>
+            <span>
+              Jira, Microsoft Office, Quality Assurance, Issue Reporting, Game
+              Testing, Confluence, Video Games
             </span>
           </div>
         </div>
@@ -153,7 +175,33 @@ const About = () => {
 
               <div className="item-container">
                 <div className="item-period">
-                  <span>2017 - 2019</span>
+                  <span>Jul 2017 - Mar 2018</span>
+                </div>
+
+                <div className="item-position">
+                  <h3>JUNIOR GAME TESTER</h3>
+                  <h4>- Ubisoft Bucharest</h4>
+                </div>
+
+                <div className="item-description">
+                  Contributed extensively to comprehensive testing and
+                  collaboration within the Tom Clancy's franchise, mastering
+                  various tools and platforms while providing valuable support
+                  on diverse projects.
+                </div>
+              </div>
+            </div>
+
+            <div className="about-experience-item">
+              <div className="icon-container">
+                <WorkIcon />
+
+                <hr />
+              </div>
+
+              <div className="item-container">
+                <div className="item-period">
+                  <span>Apr 2018 - Mar 2019</span>
                 </div>
 
                 <div className="item-position">
@@ -162,8 +210,11 @@ const About = () => {
                 </div>
 
                 <div className="item-description">
-                  Contributed extensively to comprehensive testing and collaboration within the Tom Clancy's franchise,
-                  mastering various tools and platforms while providing valuable support on diverse projects.
+                  Demonstrated exceptional leadership and proficiency within the
+                  Tom Clancy's Franchise, maintaining rigorous quality
+                  standards, fostering autonomy and providing comprehensive
+                  documentation and reports to ensure effective team
+                  performance.
                 </div>
               </div>
             </div>
@@ -177,43 +228,20 @@ const About = () => {
 
               <div className="item-container">
                 <div className="item-period">
-                  <span>Feb 2019 - Nov 2019</span>
+                  <span>Apr 2019 - Aug 2020</span>
                 </div>
 
                 <div className="item-position">
-                  <h3>TASK LEAD</h3>
+                  <h3>SENIOR GAME TESTER</h3>
                   <h4>- Ubisoft Bucharest</h4>
                 </div>
 
                 <div className="item-description">
-                  Demonstrated exceptional leadership and proficiency within the Tom Clancy's Franchise, maintaining
-                  rigorous quality standards, fostering autonomy and providing comprehensive documentation and reports
-                  to ensure effective team performance.
-                </div>
-              </div>
-            </div>
-
-            <div className="about-experience-item">
-              <div className="icon-container">
-                <WorkIcon />
-
-                <hr />
-              </div>
-
-              <div className="item-container">
-                <div className="item-period">
-                  <span>Dec 2019 - Aug 2020</span>
-                </div>
-
-                <div className="item-position">
-                  <h3>QC COORDINATOR/ TASK LEAD</h3>
-                  <h4>- Ubisoft Bucharest</h4>
-                </div>
-
-                <div className="item-description">
-                  Contributed to team development by reinforcing adherence to Jira QC processes, orchestrating efficient
-                  testing efforts, actively engaging in QC-Dev meetings, troubleshooting issues and leveraging
-                  automation tools for enhanced project efficiency.
+                  Contributed to team development by reinforcing adherence to
+                  Jira QC processes, orchestrating efficient testing efforts,
+                  actively engaging in QC-Dev meetings, troubleshooting issues
+                  and leveraging automation tools for enhanced project
+                  efficiency.
                 </div>
               </div>
             </div>
@@ -229,18 +257,20 @@ const About = () => {
 
               <div className="item-container">
                 <div className="item-period">
-                  <span>Sept 2020 - May 2022</span>
+                  <span>Sept 2020 - Mar 2022</span>
                 </div>
 
                 <div className="item-position">
-                  <h3>SOFTWARE QA ANALYST</h3>
+                  <h3>MANUAL TESTER</h3>
                   <h4>- Ubisoft Bucharest</h4>
                 </div>
 
                 <div className="item-description">
-                  QA analyst with experience in test planning, manual and functional testing across multiple platforms.
-                  Experience in gray box testing using internal tools. Acted as a key liaison between teams, provided
-                  detailed test reports and optimized issue tracking with Jira dashboards.
+                  QA analyst with experience in test planning, manual and
+                  functional testing across multiple platforms. Experience in
+                  gray box testing using internal tools. Acted as a key liaison
+                  between teams, provided detailed test reports and optimized
+                  issue tracking with Jira dashboards.
                 </div>
               </div>
             </div>
@@ -254,19 +284,21 @@ const About = () => {
 
               <div className="item-container">
                 <div className="item-period">
-                  <span>Jun 2022 - Present</span>
+                  <span>Apr 2022 - Present</span>
                 </div>
 
                 <div className="item-position">
-                  <h3>QA SPECIALIST</h3>
+                  <h3>SOFTWARE TESTER</h3>
 
                   <h4>- Ubisoft Bucharest</h4>
                 </div>
 
                 <div className="item-description">
-                  QA experienced tester in functional, regression and performance testing. Assisted junior specialists
-                  with SRS, collaborated with developers on compliance and updates. Created test cases, developed
-                  TestRail tutorials and conducted networking tests.
+                  QA experienced tester in functional, regression and
+                  performance testing. Assisted junior specialists with SRS,
+                  collaborated with developers on compliance and updates.
+                  Created test cases, developed TestRail tutorials and conducted
+                  networking tests.
                 </div>
               </div>
             </div>
@@ -280,7 +312,7 @@ const About = () => {
 
               <div className="item-container">
                 <div className="item-period">
-                  <span>Sept 2022 - present</span>
+                  <span>Jan 2023 - present</span>
                 </div>
 
                 <div className="item-position">
@@ -289,9 +321,11 @@ const About = () => {
                 </div>
 
                 <div className="item-description">
-                  Developed responsive web applications using JavaScript, TypeScript, styled components and SASS.
-                  Integrated APIs, built user-friendly interfaces, and ensured high performance through thorough testing
-                  and debugging across multiple freelance projects.
+                  Developed responsive web applications using JavaScript,
+                  TypeScript, styled components and SASS. Integrated APIs, built
+                  user-friendly interfaces, and ensured high performance through
+                  thorough testing and debugging across multiple freelance
+                  projects.
                 </div>
               </div>
             </div>
