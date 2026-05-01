@@ -2,6 +2,7 @@ import blog from "../assets/blog.jpg";
 import pm from "../assets/pm.avif";
 import ecommerce from "../assets/ecommerce.webp";
 import rental from "../assets/rental.webp";
+import friendList from "../assets/friendsList.webp";
 
 export const ProjectList = [
   {
@@ -41,5 +42,15 @@ export const ProjectList = [
     skills: "HTML, Styled Components, Typescript",
     github: "https://github.com/Xaphan64/DriveEase",
     redirect: "https://drive-ease-one.vercel.app/",
+  },
+
+  {
+    id: 5,
+    name: "Friend List",
+    type: "Friend list app",
+    image: friendList,
+    skills: "HTML, Vanilla JS",
+    github: "https://github.com/Xaphan64/friend-list",
+    redirect: "https://friends-list-alpha.vercel.app/",
   },
 ];
