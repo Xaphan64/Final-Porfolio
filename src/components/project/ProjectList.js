@@ -51,6 +51,6 @@ export const ProjectList = [
     image: friendList,
     skills: "HTML, Vanilla JS",
     github: "https://github.com/Xaphan64/friend-list",
-    redirect: "https://friends-list-alpha.vercel.app/",
+    redirect: "https://friend-list-sigma.vercel.app/",
   },
 ];
