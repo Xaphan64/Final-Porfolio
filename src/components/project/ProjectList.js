@@ -3,6 +3,7 @@ import pm from "../assets/pm.avif";
 import ecommerce from "../assets/ecommerce.webp";
 import rental from "../assets/rental.webp";
 import friendList from "../assets/friendsList.webp";
+import movieApp from "../assets/movieApp.jpg";
 
 export const ProjectList = [
   {
@@ -52,5 +53,15 @@ export const ProjectList = [
     skills: "HTML, Vanilla JS",
     github: "https://github.com/Xaphan64/friend-list",
     redirect: "https://friend-list-sigma.vercel.app/",
+  },
+
+  {
+    id: 6,
+    name: "Movie Nest",
+    type: "IMDB like API fetch App",
+    image: movieApp,
+    skills: "HTML, Tailwind CSS, JavaScript, Axios",
+    github: "https://github.com/Xaphan64/movieList",
+    redirect: "https://movie-app-kappa-snowy-53.vercel.app/",
   },
 ];
