@@ -46,8 +46,7 @@ const About = () => {
         <div className="about-details">
           <div className="about-details-row">
             <span className="about-details-item">
-              First Name :
-              <span className="about-details-text"> Alexandru-Daniel</span>
+              First Name :<span className="about-details-text"> Alexandru-Daniel</span>
             </span>
 
             <span className="about-details-item">
@@ -55,7 +54,7 @@ const About = () => {
             </span>
 
             <span className="about-details-item">
-              Age :<span className="about-details-text"> 31 Years</span>
+              Age :<span className="about-details-text"> 32 Years</span>
             </span>
 
             <span className="about-details-item">
@@ -65,38 +64,26 @@ const About = () => {
 
           <div className="about-details-row">
             <span className="about-details-item">
-              Address :
-              <span className="about-details-text"> Bucharest, Romania</span>
+              Address :<span className="about-details-text"> Bucharest, Romania</span>
             </span>
 
             <span className="about-details-item">
-              Phone :
-              <span className="about-details-text"> +40 742 754 878</span>
+              Phone :<span className="about-details-text"> +40 742 754 878</span>
             </span>
 
             <span className="about-details-item">
-              Email :
-              <span className="about-details-text">
-                {" "}
-                alexandrusarbu64@gmail.com
-              </span>
+              Email :<span className="about-details-text"> alexandrusarbu64@gmail.com</span>
             </span>
 
             <span className="about-details-item">
-              Languages :
-              <span className="about-details-text"> Romanian, English</span>
+              Languages :<span className="about-details-text"> Romanian, English</span>
             </span>
           </div>
         </div>
 
         <div className="about-button">
           <button>
-            <a
-              href={cv}
-              download="CV_Alexandru-Daniel_Sarbu"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={cv} download="CV_Alexandru-Daniel_Sarbu" target="_blank" rel="noreferrer">
               <span>DOWNLOAD CV</span>
               <DownloadIcon />
             </a>
@@ -112,48 +99,39 @@ const About = () => {
         <div className="about-skills">
           <div className="about-skills-item">
             <h3>Front-End</h3>
-            <span>
-              React, HTML, SASS, CSS, Java Script, Type Script, Styled
-              Components
-            </span>
+            <span>React, HTML, SASS, CSS, Java Script, Type Script, Styled Components</span>
           </div>
 
           <div className="about-skills-item">
             <h3>Software Tester</h3>
             <span>
-              Software Quality, Test Management, Testrail, Project Planning,
-              Software Quality Assurance, Software Development Cycle, Networking
+              Software Quality, Test Management, Testrail, Project Planning, Software Quality Assurance, Software
+              Development Cycle, Networking
             </span>
           </div>
 
           <div className="about-skills-item">
             <h3>Manual Tester</h3>
-            <span>
-              Project Management, Harbour, Online Services, Test Coverage, API
-              Testing, Online Tests
-            </span>
+            <span>Project Management, Harbour, Online Services, Test Coverage, API Testing, Online Tests</span>
           </div>
 
           <div className="about-skills-item">
             <h3>Senior Game Tester</h3>
-            <span>
-              DTest, Test Automation, Teabox, Time Management, Test Coordination
-            </span>
+            <span>DTest, Test Automation, Teabox, Time Management, Test Coordination</span>
           </div>
 
           <div className="about-skills-item">
             <h3>Game Tester</h3>
             <span>
-              Test Processes, Task Management, Issue Management, Microsoft
-              Outlook, Test Cases, Jira Dashboards, Daily Reports, Coaching
+              Test Processes, Task Management, Issue Management, Microsoft Outlook, Test Cases, Jira Dashboards,
+              Daily Reports, Coaching
             </span>
           </div>
 
           <div className="about-skills-item">
             <h3>Junior Game Tester</h3>
             <span>
-              Jira, Microsoft Office, Quality Assurance, Issue Reporting, Game
-              Testing, Confluence, Video Games
+              Jira, Microsoft Office, Quality Assurance, Issue Reporting, Game Testing, Confluence, Video Games
             </span>
           </div>
         </div>
@@ -184,10 +162,9 @@ const About = () => {
                 </div>
 
                 <div className="item-description">
-                  Contributed extensively to comprehensive testing and
-                  collaboration within the Tom Clancy's franchise, mastering
-                  various tools and platforms while providing valuable support
-                  on diverse projects.
+                  Contributed extensively to comprehensive testing and collaboration within the Tom Clancy's
+                  franchise, mastering various tools and platforms while providing valuable support on diverse
+                  projects.
                 </div>
               </div>
             </div>
@@ -210,11 +187,9 @@ const About = () => {
                 </div>
 
                 <div className="item-description">
-                  Demonstrated exceptional leadership and proficiency within the
-                  Tom Clancy's Franchise, maintaining rigorous quality
-                  standards, fostering autonomy and providing comprehensive
-                  documentation and reports to ensure effective team
-                  performance.
+                  Demonstrated exceptional leadership and proficiency within the Tom Clancy's Franchise,
+                  maintaining rigorous quality standards, fostering autonomy and providing comprehensive
+                  documentation and reports to ensure effective team performance.
                 </div>
               </div>
             </div>
@@ -237,11 +212,9 @@ const About = () => {
                 </div>
 
                 <div className="item-description">
-                  Contributed to team development by reinforcing adherence to
-                  Jira QC processes, orchestrating efficient testing efforts,
-                  actively engaging in QC-Dev meetings, troubleshooting issues
-                  and leveraging automation tools for enhanced project
-                  efficiency.
+                  Contributed to team development by reinforcing adherence to Jira QC processes, orchestrating
+                  efficient testing efforts, actively engaging in QC-Dev meetings, troubleshooting issues and
+                  leveraging automation tools for enhanced project efficiency.
                 </div>
               </div>
             </div>
@@ -266,11 +239,9 @@ const About = () => {
                 </div>
 
                 <div className="item-description">
-                  QA analyst with experience in test planning, manual and
-                  functional testing across multiple platforms. Experience in
-                  gray box testing using internal tools. Acted as a key liaison
-                  between teams, provided detailed test reports and optimized
-                  issue tracking with Jira dashboards.
+                  QA analyst with experience in test planning, manual and functional testing across multiple
+                  platforms. Experience in gray box testing using internal tools. Acted as a key liaison between
+                  teams, provided detailed test reports and optimized issue tracking with Jira dashboards.
                 </div>
               </div>
             </div>
@@ -294,11 +265,9 @@ const About = () => {
                 </div>
 
                 <div className="item-description">
-                  QA experienced tester in functional, regression and
-                  performance testing. Assisted junior specialists with SRS,
-                  collaborated with developers on compliance and updates.
-                  Created test cases, developed TestRail tutorials and conducted
-                  networking tests.
+                  QA experienced tester in functional, regression and performance testing. Assisted junior
+                  specialists with SRS, collaborated with developers on compliance and updates. Created test
+                  cases, developed TestRail tutorials and conducted networking tests.
                 </div>
               </div>
             </div>
@@ -321,11 +290,9 @@ const About = () => {
                 </div>
 
                 <div className="item-description">
-                  Developed responsive web applications using JavaScript,
-                  TypeScript, styled components and SASS. Integrated APIs, built
-                  user-friendly interfaces, and ensured high performance through
-                  thorough testing and debugging across multiple freelance
-                  projects.
+                  Developed responsive web applications using JavaScript, TypeScript, styled components and SASS.
+                  Integrated APIs, built user-friendly interfaces, and ensured high performance through thorough
+                  testing and debugging across multiple freelance projects.
                 </div>
               </div>
             </div>
