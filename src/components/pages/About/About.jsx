@@ -99,7 +99,7 @@ const About = () => {
         <div className="about-skills">
           <div className="about-skills-item">
             <h3>Front-End</h3>
-            <span>React, HTML, SASS, CSS, Java Script, Type Script, Styled Components</span>
+            <span>React, HTML, SASS, CSS, Java Script, Type Script, Styled Components, Tailwind CSS</span>
           </div>
 
           <div className="about-skills-item">
