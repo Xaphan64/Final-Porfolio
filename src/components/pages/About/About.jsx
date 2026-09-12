@@ -99,11 +99,16 @@ const About = () => {
         <div className="about-skills">
           <div className="about-skills-item">
             <h3>Front-End</h3>
-            <span>React, HTML, SASS, CSS, Java Script, Type Script, Styled Components, Tailwind CSS</span>
+            <span>React, HTML, SASS, CSS, JavaScript, TypeScript, Styled Components, Tailwind CSS</span>
           </div>
 
           <div className="about-skills-item">
-            <h3>Software Tester</h3>
+            <h3>Quality Assurance Engineer</h3>
+            <span>Postman API, Test Automation, Playwright, Selenium, Cucumber, Python, Jenkins</span>
+          </div>
+
+          <div className="about-skills-item">
+            <h3>Online Requirements/ Networking Specialist</h3>
             <span>
               Software Quality, Test Management, Testrail, Project Planning, Software Quality Assurance, Software
               Development Cycle, Networking
@@ -111,7 +116,7 @@ const About = () => {
           </div>
 
           <div className="about-skills-item">
-            <h3>Manual Tester</h3>
+            <h3>Online Requirements Specialist</h3>
             <span>Project Management, Harbour, Online Services, Test Coverage, API Testing, Online Tests</span>
           </div>
 
@@ -234,14 +239,15 @@ const About = () => {
                 </div>
 
                 <div className="item-position">
-                  <h3>MANUAL TESTER</h3>
+                  <h3>ONLINE REQUIREMENTS SPECIALST</h3>
                   <h4>- Ubisoft Bucharest</h4>
                 </div>
 
                 <div className="item-description">
-                  QA analyst with experience in test planning, manual and functional testing across multiple
-                  platforms. Experience in gray box testing using internal tools. Acted as a key liaison between
-                  teams, provided detailed test reports and optimized issue tracking with Jira dashboards.
+                  Online Requirements tester with experience in test planning, manual and functional testing
+                  across multiple platforms. Experience in gray box testing using internal tools. Acted as a key
+                  liaison between teams, provided detailed test reports and optimized issue tracking with Jira
+                  dashboards.
                 </div>
               </div>
             </div>
@@ -255,19 +261,45 @@ const About = () => {
 
               <div className="item-container">
                 <div className="item-period">
-                  <span>Apr 2022 - Present</span>
+                  <span>Apr 2022 - May 2024</span>
                 </div>
 
                 <div className="item-position">
-                  <h3>SOFTWARE TESTER</h3>
+                  <h3>ONLINE REQUIREMENTS/ NETWORKING SPECIALIST</h3>
 
-                  <h4>- Ubisoft Bucharest</h4>
+                  {/* <h4>- Ubisoft Bucharest</h4> */}
                 </div>
 
                 <div className="item-description">
                   QA experienced tester in functional, regression and performance testing. Assisted junior
                   specialists with SRS, collaborated with developers on compliance and updates. Created test
                   cases, developed TestRail tutorials and conducted networking tests.
+                </div>
+              </div>
+            </div>
+
+            <div className="about-experience-item">
+              <div className="icon-container">
+                <WorkIcon />
+
+                <hr />
+              </div>
+
+              <div className="item-container">
+                <div className="item-period">
+                  <span>June 2024 - Present</span>
+                </div>
+
+                <div className="item-position">
+                  <h3>QUALITY ASSURANCE ENGINEER</h3>
+
+                  <h4>- Ubisoft Bucharest</h4>
+                </div>
+
+                <div className="item-description">
+                  Developed automation frameworks using Playwright/TypeScript, Selenium/Python, and Cucumber,
+                  automating 500+ test cases. Integrated automation with Jenkins and Postman, collaborating with
+                  development teams to improve release quality.
                 </div>
               </div>
             </div>
